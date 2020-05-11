@@ -1,0 +1,42 @@
+@mixin hidden-text($width, $height, $bg_url) {
+  width: $width;
+  height: $height;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: $bg_url;
+  background-repeat: no-repeat;
+}
+
+@mixin media-breakpoint-lg {
+  @media screen and (max-width: $lg-width) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-md {
+  @media screen and (max-width: $md-width) {
+    @content;
+  }
+}
+@mixin media-breakpoint-sm {
+  @media screen and (max-width: $sm-width) {
+    @content;
+  }
+}
+@mixin iPad {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin iPhoneSE {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+@mixin rwd($rwd-width) {
+  @media only screen and (max-width: $rwd-width) {
+    @content;
+  }
+}

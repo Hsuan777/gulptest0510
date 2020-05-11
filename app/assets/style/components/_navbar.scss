@@ -1,0 +1,28 @@
+.logo {
+  @include hidden-text(151px, 40px, url("../images/logo-ANSWER.svg"));
+}
+
+.navbar {
+  &__list{
+    list-style: none;
+    display: flex;
+  }
+  
+  &__link {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 15px 0;
+    &:hover {
+      color: map-get($color, primary);
+      
+    }
+  }
+  &__menu{
+    margin-bottom: 363px;
+  }
+  &__topInfo{
+    padding :32px;
+  }
+}
+
