@@ -1,0 +1,58 @@
+/* flex */
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap{
+  flex-wrap: nowrap;
+}
+.flex-grow-0{
+  flex-grow: 0;
+}
+.flex-direction--column {
+  flex-direction: column;
+}
+.justify-content--between {
+  justify-content: space-between;
+}
+.justify-content--end {
+  justify-content: flex-end;
+}
+.justify-content--center {
+  justify-content: center;
+}
+.align-items--start {
+  align-items: flex-start;
+}
+.align-items--center {
+  align-items: center;
+}
+.align-items--end {
+  align-items: flex-end;
+}
+.align-items--stretch {
+  align-items: stretch;
+}
+
+/* order */
+@for $i from 1 through 4{
+  .order-#{$i}{
+    order: $i;
+  }
+}
+@include media-breakpoint-md {
+  @for $i from 1 through 4{
+    .order-md-#{$i}{
+      order: $i;
+    }
+  }
+
+}
+
+@include media-breakpoint-sm{
+  .flex-sm-wrap{
+    flex-wrap: wrap;
+  }
+}

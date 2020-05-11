@@ -1,2 +1,23 @@
-@import "../scss/index";
-@import "table";
+@import "normalize";
+// @import "cssreset";
+@import "variables";
+@import "mixin";
+@import "base";
+@import "layout";
+
+// Project
+@import "pages/index";
+
+@import "utilities/utilities";
+@import "utilities/grid";
+@import "utilities/spacing";
+@import "utilities/flex";
+
+@import "components/banner";
+@import "components/navbar";
+@import "components/card";
+@import "components/pagination";
+
+
+
+
