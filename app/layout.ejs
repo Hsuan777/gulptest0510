@@ -29,7 +29,7 @@
   <div class="container">
     <div class="row no-gutters">
       <div class="col-3">
-        <section class="section__menu bg-secondary h-100">
+        <aside class="p-4 bg-secondary h-100">
           <h1 class="logo mb-5">ANSWER</h1>
           <nav class="navbar__menu">
             <ul class="navbar__list flex-column ">
@@ -39,7 +39,7 @@
               <a href="" class="navbar__link js-navbar__menu__link text-decoration-none ">
                 <span class="material-icons mr-2"> question_answer </span> Question
               </a>
-              <a href="index.html".html" class="navbar__link js-navbar__menu__link text-decoration-none ">
+              <a href="index.html" .html" class="navbar__link js-navbar__menu__link text-decoration-none ">
                 <span class="material-icons mr-2"> assignment </span> Assignment
               </a>
               <a href="" class="navbar__link js-navbar__menu__link js-navbar__menu__link text-decoration-none">
@@ -58,15 +58,15 @@
             <h2>Andy Chen <br> <small class="">@gmail.com</small> </h2>
           </footer>
 
-        </section>
+        </aside>
       </div>
       <div class="col-9">
-        <nav class="navbar__topInfo">
-          <ul class="navbar__list justify-content-between align-items-center w-100"> 
+        <nav class="p-4 mb-3">
+          <ul class="navbar__list justify-content-between align-items-center w-100">
             <li class="d-flex align-items-center">
               <h2 class="h1 mr-5 mb-0"><%- title %></h2>
-              <%- functionName %> 
-              
+              <%- functionName %>
+
             </li>
             <li>
               <span class="material-icons mr-3"> search </span>
@@ -74,20 +74,24 @@
             </li>
           </ul>
         </nav>
-        <section class="section__content">
+        <main class="px-4 py-1">
+          <%- contents %>
+        </main>
 
-          <main>
-            <%- contents %>
-          </main>
 
-        </section>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
   <script src="assets/js/vendors.js"></script>
   <script src="assets/js/all.js"></script>
