@@ -14,7 +14,7 @@
     color: black;
     padding: 15px 0;
     &:hover {
-      color: map-get($color, primary);
+      color: map-get($theme-colors, primary);
       
     }
   }
