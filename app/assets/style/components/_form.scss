@@ -1,0 +1,26 @@
+.checkbox {
+  display: none;
+  &__label {
+    cursor: pointer;
+    &::before {
+      content: "\2714";
+      border: 3px solid #000;
+      border-radius: 10%;
+      display: inline-block;
+      width: 27px;
+      height: 15px;
+      transform: translateY(5px);
+      padding: 0px 0 22px 3px;
+      margin-right: 4px;
+      color: transparent;
+    }
+  }
+
+  &:checked {
+    + .checkbox__label::before {
+     
+      background-color: black;
+      color: white;
+    }
+  }
+}
