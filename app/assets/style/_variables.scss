@@ -4,6 +4,7 @@ $theme-colors: (
   "primary": #2A8356,
   "secondary": #CDDDCD,
   "third":    #EDF4EE,
+  "danger":#E3006E,
 );
 
 $table-border-color: map-get($theme-colors, secondary );
