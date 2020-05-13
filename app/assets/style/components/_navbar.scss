@@ -15,7 +15,13 @@
     }
   }
   &__menu{
-    margin-bottom: 363px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 296px;
+    &__list{
+      margin-bottom: 363px;
+    }
     .active{
       color: map-get($theme-colors, primary);
     }
