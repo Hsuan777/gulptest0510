@@ -1,6 +1,29 @@
-.userInfo{
-  &__img{
-    
-    height: 141px;
+
+.loginImg{
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  &__admin{
+    background-image: url("../images/photo-1514794749374-fb67509dbb7f.jpg");
   }
+  &__user{
+    background-image: url("../images/photo-1504051771394-dd2e66b2e08f.jpg");
+  }
+  &__userInfo{
+    width: 141px;
+    height: 141px;
+    background-image: url("../images/photo-1522069394066-326005dc26b2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.js-more{
+  cursor: pointer;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
 }

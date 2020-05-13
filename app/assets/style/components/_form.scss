@@ -4,13 +4,13 @@
     cursor: pointer;
     &::before {
       content: "\2714";
-      border: 3px solid #000;
+      border: 2px solid #000;
       border-radius: 10%;
       display: inline-block;
       width: 27px;
       height: 15px;
-      transform: translateY(5px);
-      padding: 0px 0 22px 3px;
+      transform: translateY(3px);
+      padding: 0px 0 22px 4px;
       margin-right: 4px;
       color: transparent;
     }
