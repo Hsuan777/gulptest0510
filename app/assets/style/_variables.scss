@@ -9,7 +9,6 @@ $theme-colors: (
 
 $table-border-color: map-get($theme-colors, secondary );
 
-
 $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge(
@@ -29,11 +28,11 @@ $font-family-sans-serif: Lato,Roboto, -apple-system, BlinkMacSystemFont, "Segoe 
 
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  // sm: 540px,
+  // md: 720px,
+  // lg: 960px,
   xl: 1280px
 ) !default;
 
-$grid-gutter-width: 32px !default;
+
 

@@ -2,22 +2,6 @@
 html{
   font-size: 16px;
 }
-// body{
-//   margin: 0 auto;
-//   font-size: $body__font-size;
-//   background-color: $body__background-color;
-//   color: $body__color;
-//   font-family:  $body__font-family;
-//   line-height: $body__line-height;
-//   font-weight: bold;
-// }
-
-// img{
-//   max-width: 100%;
-//   height: auto;
-//   display: block;
-// }
-
 
 h1, .h1 {
   font-size: 24px;
@@ -34,7 +18,7 @@ h6, .h6{
 h1, .h1,h2, .h2,h6, .h6{
   line-height: 1.5;
   font-weight: bold;
-  margin-bottom: 0;
+  
 }
 p{
   font-size: 14px;
@@ -48,9 +32,7 @@ ul{
   padding: 0;
   margin: 0;
 }
-.small{
-  font-size: 14px;
-}
+
 td{
   vertical-align: middle !important;
 }

@@ -7,6 +7,7 @@ engine: ejs
 current: assignment
 ---
 <main>
+  <!-- TODO: 若使用 a連結作為 modal切換可以寫在 href，否則用 data-target=""轉換 -->
   <!-- TODO:下拉式選單 -->
   <h2 class="d-flex align-center--center mr-1 mb-1">All(4)
     <span class="material-icons text-primary"> expand_more </span>
@@ -20,8 +21,8 @@ current: assignment
             href="#list-home" role="tab" aria-controls="home">
             <ul>
               <li class="d-flex justify-content-between">
-                <h6 class="">Chapter Assignment 2</h6>
-                <h6 class="">4 hrs ago</h6>
+                <h6 class="mb-0">Chapter Assignment 2</h6>
+                <h6 class="mb-0">4 hrs ago</h6>
               </li>
               <li class="d-flex justify-content-between align-items-center">
                 <h2 class="mb-0">Please check this file…</h2>
@@ -29,30 +30,30 @@ current: assignment
               </li>
             </ul>
           </a>
-          <a class="list-group-item px-2">
+          <a class="list-group-item list-group-item-action px-2">
             <ul>
               <li class="d-flex justify-content-between">
-                <h6 class="">Chapter Assignment 2</h6>
-                <h6 class="">4 hrs ago</h6>
+                <h6 class="mb-0">Chapter Assignment 2</h6>
+                <h6 class="mb-0">4 hrs ago</h6>
               </li>
               <li class="d-flex justify-content-between align-items-center">
                 <h2 class="mb-0">Please check this file…</h2>
                 <h6 class="mb-0 text-black-50">Emily Wang</h6>
               </li>
             </ul>
-            </li>
-            <a class="list-group-item px-2">
-              <ul>
-                <li class="d-flex justify-content-between">
-                  <h6 class="">Chapter Assignment 2</h6>
-                  <h6 class="">4 hrs ago</h6>
-                </li>
-                <li class="d-flex justify-content-between align-items-center">
-                  <h2 class="mb-0">Please check this file…</h2>
-                  <h6 class="mb-0 text-black-50">Emily Wang</h6>
-                </li>
-              </ul>
-            </a>
+          </a>
+          <a class="list-group-item list-group-item-action  px-2">
+            <ul>
+              <li class="d-flex justify-content-between">
+                <h6 class="mb-0">Chapter Assignment 2</h6>
+                <h6 class="mb-0">4 hrs ago</h6>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <h2 class="mb-0">Please check this file…</h2>
+                <h6 class="mb-0 text-black-50">Emily Wang</h6>
+              </li>
+            </ul>
+          </a>
         </div>
       </div>
 
@@ -61,8 +62,8 @@ current: assignment
           <header class="card-header d-flex align-items-center bg-third px-2 ">
             <ul class="list-unstyled w-100 d-flex align-items-center justify-content-between">
               <li>
-                <h6 class="">Chah6ter Assignment 2 / HTML&CSS</h6>
-                <h2 class="">Please check this file for me, thanks! </h2>
+                <h6 class="mb-0">Chah6ter Assignment 2 / HTML&CSS</h6>
+                <h2 class="mb-0">Please check this file for me, thanks! </h2>
               </li>
               <li>
                 <button class="btn btn-link text-dark m-0 p-0">
@@ -80,7 +81,8 @@ current: assignment
                   <h2 class="mb-0">Emily Wang</h2>
                   <h6 class="text-black-50 mb-2">10:38 AM (4 hours ago)</h6>
                   <p class="">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why
-                    in the following code the height of the <span class="text__highlight">div</span>  is bigger than the height of the <span class="text__highlight">img</span>  ? There is a gap
+                    in the following code the height of the <span class="text__highlight">div</span> is bigger than the
+                    height of the <span class="text__highlight">img</span> ? There is a gap
                     below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                     image?</p>
                   <a href="" type="button"
@@ -133,6 +135,7 @@ current: assignment
               <span class="material-icons  text-dark"> keyboard_arrow_right </span>
             </button>
           </li>
+          <!-- TODO:回覆表單 -->
           <li>
             <input type="button" class="btn btn-outline-primary  mr-2 px-4" value="Mark as read">
             <input type="button" class="btn btn-primary px-4" value="Reply">

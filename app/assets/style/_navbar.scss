@@ -3,6 +3,21 @@
 }
 
 .navbar {
+  &__menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 296px;
+    
+    &__user{
+      position: absolute;
+      bottom: 15px;
+    }
+    .active{
+      color: map-get($theme-colors, primary);
+    }
+    
+  }
   
   &__link {
     display: flex;
@@ -14,19 +29,7 @@
       
     }
   }
-  &__menu{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 296px;
-    &__list{
-      margin-bottom: 363px;
-    }
-    .active{
-      color: map-get($theme-colors, primary);
-    }
-    
-  }
+  
   
   
 }

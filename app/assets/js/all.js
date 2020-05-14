@@ -42,7 +42,6 @@ $(document).ready(() => {
   $('a[data-dismiss="modal"][data-toggle="modal"],button[data-dismiss="modal"][data-toggle="modal"]').on('click', function() {
     event.preventDefault();
     var target = $(this).data('target');
-    console.log(target);
     $(target).on('shown.bs.modal',function(){
       $('body').addClass('modal-open');
     })
