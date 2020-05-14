@@ -73,13 +73,14 @@ current: assignment
           </header>
           <main class="card-body p-2">
             <ul class="list-unstyled">
+              <!-- 學員 -->
               <li class="media ">
                 <div class="loginImg loginImg__user rounded-circle mr-1 "></div>
                 <div class="media-body border-bottom border-secondary mb-2">
                   <h2 class="mb-0">Emily Wang</h2>
                   <h6 class="text-black-50 mb-2">10:38 AM (4 hours ago)</h6>
                   <p class="">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why
-                    in the following code the height of the div is bigger than the height of the img ? There is a gap
+                    in the following code the height of the <span class="text__highlight">div</span>  is bigger than the height of the <span class="text__highlight">img</span>  ? There is a gap
                     below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                     image?</p>
                   <a href="" type="button"
@@ -88,19 +89,35 @@ current: assignment
                   </a>
                 </div>
               </li>
+              <!-- 講師 -->
               <li class="media">
                 <div class="loginImg loginImg__admin rounded-circle mr-1 "></div>
                 <div class="media-body">
-                  <h2 class="mb-0">Andy Chen (You)</h2>
-                  <h6 class="text-black-50 mb-2">10:38 AM (4 hours ago)</h6>
+                  <ul class="list-unstyled d-flex justify-content-between">
+                    <li>
+                      <h2 class="mb-0">Andy Chen (You)</h2>
+                      <h6 class="text-black-50 mb-2">13:24 AM (1 hours ago)</h6>
+                    </li>
+                    <li>
+                      <button class="btn btn-link text-dark">
+                        <span class="material-icons"> star_border </span>
+                      </button>
+                      <button class="btn btn-link text-dark">
+                        <span class="material-icons"> edit </span>
+                      </button>
+                    </li>
+                  </ul>
+
                   <p>Hi Emily, by default, an image is rendered inline, like a letter so it sits on the same line that
                     a, b, c and d sit on. There is space below that line for the descenders you find on letters like g,
                     j, p and q.
                   </p>
-                  <p>You can:</p> 
+                  <p>You can:</p>
                   <div class="ml-2">
-                    <p class="mb-0"> • adjust the <span class="bg-third text-primary px-1">vertical-align</span>  of the image to position it elsewhere (e.g. the <span class="bg-third text-primary px-1">middle</span> ) or </p>
-                    <p> • change the <span class="bg-third text-primary px-1">display</span> so it isn’t inline.</p>
+                    <p class="mb-0"> • adjust the <span class="text__highlight">vertical-align</span> of the
+                      image to position it elsewhere (e.g. the <span class="text__highlight">middle</span> )
+                      or </p>
+                    <p> • change the <span class="text__highlight">display</span> so it isn’t inline.</p>
                   </div>
                 </div>
               </li>
@@ -117,12 +134,12 @@ current: assignment
             </button>
           </li>
           <li>
-            <input type="button" class="btn btn-outline-primary  mr-2 px-4"value="Mark as read">
+            <input type="button" class="btn btn-outline-primary  mr-2 px-4" value="Mark as read">
             <input type="button" class="btn btn-primary px-4" value="Reply">
           </li>
         </ul>
-        
-        
+
+
       </div>
     </div>
   </div>

@@ -27,3 +27,9 @@
   width: 24px;
   height: 24px;
 }
+
+.text__highlight {
+  color: map-get($theme-colors, primary );
+  background-color: map-get($theme-colors, third );
+  padding: 0 0.5rem;
+}

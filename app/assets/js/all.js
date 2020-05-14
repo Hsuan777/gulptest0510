@@ -9,7 +9,6 @@ $(document).ready(() => {
     }else{
       $(this).text("expand_more");
     }
-    $(".js-more__inner").toggle();
   });
 
 
@@ -38,4 +37,15 @@ $(document).ready(() => {
     $(this).find('.js-serial_number').text(serialNumber);
     $(this).find('.js-user_email').text(userEmail);
   })
+
+  // 解決切換 modal頁面時， modal無法往下拉，因為 data-dismiss會造成 modal-open被取消
+  $('a[data-dismiss="modal"][data-toggle="modal"],button[data-dismiss="modal"][data-toggle="modal"]').on('click', function() {
+    event.preventDefault();
+    var target = $(this).data('target');
+    console.log(target);
+    $(target).on('shown.bs.modal',function(){
+      $('body').addClass('modal-open');
+    })
+  });
+
 });
