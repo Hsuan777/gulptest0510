@@ -26,35 +26,36 @@
 
 <body>
 
-  <div class="container">
+  <div class="container-fuild">
     <div class="row no-gutters">
-      <div class="col-3">
-        <aside class="navbar__menu p-4 bg-third h-100 ">
-          <nav class="nav flex-column">
-            <h1 class="logo mb-4">ANSWER</h1>
-            <a href="" class="navbar__link  text-decoration-none ">
+      <div class="col-2">
+        <aside class="navbar__menu py-4  bg-third h-100 ">
+          <nav class="nav flex-column ">
+            
+            <h1 class="logo mb-4 ml-4">ANSWER</h1>
+            <a href="" class="navbar__link pl-4 text-decoration-none ">
               <span class="material-icons mr-2">assessment </span> Dashboard
             </a>
-            <a href="" class="navbar__link  text-decoration-none ">
+            <a href="" class="navbar__link pl-4 text-decoration-none ">
               <span class="material-icons mr-2"> question_answer </span> Question
             </a>
-            <a href="index.html" class="navbar__link  text-decoration-none ">
+            <a href="index.html" class="navbar__link pl-4 text-decoration-none ">
               <span class="material-icons mr-2"> assignment </span> Assignment
             </a>
-            <a href="" class="navbar__link   text-decoration-none">
+            <a href="" class="navbar__link pl-4  text-decoration-none">
               <span class="material-icons mr-2"> video_library </span> Course
             </a>
-            <a href="admin.html" class="navbar__link  text-decoration-none ">
-              <span class="material-icons mr-2"> group </span>Admin
+            <a href="admin.html" class="navbar__link pl-4 text-decoration-none ">
+              <span class="material-icons mr-2 "> group </span>Admin
             </a>
             
-            <a href="" class="navbar__link  text-decoration-none">
+            <a href="" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2"> settings </span> Settings
             </a>
             
           </nav>
-          <!-- TODO:位置還是很奇怪 -->
-          <div class="navbar__menu__user media align-items-center">
+          <!-- TODO: 先用定位，但它父元素是 body，待修正 -->
+          <div class="navbar__menu__user media align-items-center ml-4">
             <div class=" loginImg loginImg__admin mr-2 rounded-circle"></div>
             <div class="media-body">
               <h2 class="mb-0">Andy Chen </h2>
@@ -64,7 +65,7 @@
 
         </aside>
       </div>
-      <div class="col-9">
+      <div class="col-10">
         <nav class="p-4 mb-2">
           <ul class="nav list-unstyled justify-content-between align-items-center w-100">
             <li class="d-flex align-items-center">
@@ -98,7 +99,7 @@
       <div class="col-5 pr-1">
         <!-- 課程回覆清單 -->
         <div class="list-group " id="list-tab" role="tablist">
-          <a class="list-group-item  px-2  active" id="list__ChapterAssignment2__question1" data-toggle="list"
+          <a class="list-group-item list-group-item-action px-2  active" id="list__ChapterAssignment2__question1" data-toggle="list"
             href="#list__ChapterAssignment2__question1__inner" role="tab" aria-controls="ChapterAssignment2">
             <ul>
               <li class="d-flex justify-content-between">
@@ -106,12 +107,12 @@
                 <h6 class="mb-0">4 hrs ago</h6>
               </li>
               <li class="d-flex justify-content-between align-items-center">
-                <h2 class="mb-0">Please check this file…</h2>
+                <h2 class="mb-0">Please check this file for me, thanks! </h2>
                 <h6 class="mb-0 text-black-50">Emily Wang</h6>
               </li>
             </ul>
           </a>
-          <a class="list-group-item  px-2"  id="list__ChapterAssignment1__question1" data-toggle="list"
+          <a class="list-group-item list-group-item-action px-2"  id="list__ChapterAssignment1__question1" data-toggle="list"
           href="#list__ChapterAssignment1__question1__inner" role="tab" aria-controls="ChapterAssignment1">
             <ul>
               <li class="d-flex justify-content-between">
@@ -132,7 +133,7 @@
                 <h6 class="mb-0">18 hrs ago</h6>
               </li>
               <li class="d-flex justify-content-between align-items-center">
-                <h2 class="mb-0">Have a problem with this…</h2>
+                <h2 class="mb-0">Have a problem with this</h2>
                 <h6 class="mb-0 text-black-50">Tony Wei</h6>
               </li>
             </ul>
@@ -185,7 +186,7 @@
                         below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                         image?</p>
                       <a href="" type="button"
-                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-50 ">
+                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-25 ">
                         <span class="material-icons mr-1"> attach_file </span> HW-2-David.zip
                       </a>
                     </div>
@@ -255,7 +256,7 @@
                         below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                         image?</p>
                       <a href="" type="button"
-                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-50 ">
+                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-25 ">
                         <span class="material-icons mr-1"> attach_file </span> HW-2-David.zip
                       </a>
                     </div>
@@ -325,7 +326,7 @@
                         below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                         image?</p>
                       <a href="" type="button"
-                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-50 ">
+                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-25 ">
                         <span class="material-icons mr-1"> attach_file </span> HW-2-David.zip
                       </a>
                     </div>
@@ -395,7 +396,7 @@
                         below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
                         image?</p>
                       <a href="" type="button"
-                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-50 ">
+                        class="btn btn-third h2 border-secondary mb-2 d-flex align-items-center justify-content-center w-25 ">
                         <span class="material-icons mr-1"> attach_file </span> HW-2-David.zip
                       </a>
                     </div>
@@ -448,7 +449,7 @@
               <span class="material-icons  text-dark"> keyboard_arrow_right </span>
             </button>
           </li>
-          <!-- TODO:回覆表單，要怎麼蓋過去? -->
+          <!-- TODO:回覆表單，要怎麼蓋過去? 用折疊試看看，顯示方式從右下到左上 -->
           <li>
             <input type="button" class="btn btn-outline-primary  mr-2 px-4" value="Mark as read">
             <input type="button" class="btn btn-primary px-4" value="Reply">

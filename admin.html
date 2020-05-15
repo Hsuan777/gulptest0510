@@ -26,35 +26,36 @@
 
 <body>
 
-  <div class="container">
+  <div class="container-fuild">
     <div class="row no-gutters">
-      <div class="col-3">
-        <aside class="navbar__menu p-4 bg-third h-100 ">
-          <nav class="nav flex-column">
-            <h1 class="logo mb-4">ANSWER</h1>
-            <a href="" class="navbar__link  text-decoration-none ">
+      <div class="col-2">
+        <aside class="navbar__menu py-4  bg-third h-100 ">
+          <nav class="nav flex-column ">
+            
+            <h1 class="logo mb-4 ml-4">ANSWER</h1>
+            <a href="" class="navbar__link pl-4 text-decoration-none ">
               <span class="material-icons mr-2">assessment </span> Dashboard
             </a>
-            <a href="" class="navbar__link  text-decoration-none ">
+            <a href="" class="navbar__link pl-4 text-decoration-none ">
               <span class="material-icons mr-2"> question_answer </span> Question
             </a>
-            <a href="index.html" class="navbar__link  text-decoration-none ">
+            <a href="index.html" class="navbar__link pl-4 text-decoration-none ">
               <span class="material-icons mr-2"> assignment </span> Assignment
             </a>
-            <a href="" class="navbar__link   text-decoration-none">
+            <a href="" class="navbar__link pl-4  text-decoration-none">
               <span class="material-icons mr-2"> video_library </span> Course
             </a>
-            <a href="admin.html" class="navbar__link  text-decoration-none ">
-              <span class="material-icons mr-2"> group </span>Admin
+            <a href="admin.html" class="navbar__link pl-4 text-decoration-none ">
+              <span class="material-icons mr-2 "> group </span>Admin
             </a>
             
-            <a href="" class="navbar__link  text-decoration-none">
+            <a href="" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2"> settings </span> Settings
             </a>
             
           </nav>
-          <!-- TODO:位置還是很奇怪 -->
-          <div class="navbar__menu__user media align-items-center">
+          <!-- TODO: 先用定位，但它父元素是 body，待修正 -->
+          <div class="navbar__menu__user media align-items-center ml-4">
             <div class=" loginImg loginImg__admin mr-2 rounded-circle"></div>
             <div class="media-body">
               <h2 class="mb-0">Andy Chen </h2>
@@ -64,7 +65,7 @@
 
         </aside>
       </div>
-      <div class="col-9">
+      <div class="col-10">
         <nav class="p-4 mb-2">
           <ul class="nav list-unstyled justify-content-between align-items-center w-100">
             <li class="d-flex align-items-center">
@@ -80,7 +81,8 @@
         </nav>
         <main class="px-4 py-1">
           <main>
-  <table class="table table-hover  ">
+  <!-- table 元件 -->
+  <table class="table table-hover  mb-5">
     <thead>
       <tr>
         <th scope="col" class=" border-top-0 border-dark pl-0">
@@ -144,6 +146,26 @@
       </tr>
     </tbody>
   </table>
+
+  <!-- 分頁元件 ; aria-label:無障礙裝置使用-->
+  <nav aria-label="Page navigation">
+    <ul class="pagination  ">
+      <li class="page-item  ml-auto ">
+        <a class="page-link custom__page-link" href="#" aria-label="Previous">
+          <span class="material-icons icon__page"> keyboard_arrow_left </span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link " href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link custom__page-link" href="#" aria-label="Next">
+          <span class="material-icons icon__page"> keyboard_arrow_right </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
 </main>
 
 
@@ -165,11 +187,11 @@
           <h2>Account</h2>
           <div class="form-group  ">
             <label for="userName" class="d-block mb-0">Name</label>
-            <input type="text" id="userName" name="userName" class="form-control border-dark " required>
+            <input type="text" id="userName" name="userName" class="form-control border-dark " placeholder="請輸入姓名" required>
           </div>
           <div class="form-group border-bottom border-secondary pb-4">
             <label for="userEmail" class="d-block mb-0">Email</label>
-            <input type="email" id="userEmail" name="userEmail" class="form-control border-dark " required>
+            <input type="email" id="userEmail" name="userEmail" class="form-control border-dark  "placeholder="請輸入信箱" required>
           </div>
 
           <h2>Verification</h2>
@@ -225,7 +247,7 @@
 
 <!-- userInfo Modal  -->
 <div class="modal fade" id="userInfo" tabindex="-1" role="dialog" aria-labelledby="userInfo" aria-hidden="true">
-  <div class="modal-dialog " role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
 
       <div class=" media p-2">
@@ -291,7 +313,7 @@
               <span class="material-icons mr-1 text-primary "> check_circle </span> Verified
               <span class="ml-auto h6">2020/05/13</span>
             </p>
-            <button type="button" class="btn btn-outline-secondary  w-100 p-1" disabled>Send Verification Mail </button>
+            <button type="button" class="btn btn-outline-secondary  w-100 p-1" disabled style="cursor: not-allowed;">Send Verification Mail </button>
           </div>
 
           <h2>Access Level</h2>
@@ -306,20 +328,20 @@
           <!-- 同一頁面 label ID重複，增加前綴詞-->
           <h2>Custom Access</h2>
           <div class="form-group ">
-            <input type="checkbox" id="edit__lecture" class="checkbox mr-1">
-            <label for="edit__lecture" class="checkbox__label mb-0 w-100"> Lecture</label>
+            <input type="checkbox" id="edit__lecture" class="checkbox mr-1" checked>
+            <label for="edit__lecture" class="checkbox__label mb-0 w-100" > Lecture</label>
           </div>
           <div class="form-group ">
             <input type="checkbox" id="edit__coupon" class="checkbox mr-1">
             <label for="edit__coupon" class="checkbox__label mb-0 w-100"> Coupon</label>
           </div>
           <div class="form-group ">
-            <input type="checkbox" id="edit__message" class="checkbox mr-1">
-            <label for="edit__message" class="checkbox__label mb-0 w-100"> Message</label>
+            <input type="checkbox" id="edit__message" class="checkbox mr-1" checked>
+            <label for="edit__message" class="checkbox__label mb-0 w-100" > Message</label>
           </div>
           <div class="form-group ">
-            <input type="checkbox" id="edit__setting" class="checkbox mr-1">
-            <label for="edit__setting" class="checkbox__label mb-0 w-100"> Setting</label>
+            <input type="checkbox" id="edit__setting" class="checkbox mr-1" checked>
+            <label for="edit__setting" class="checkbox__label mb-0 w-100" > Setting</label>
           </div>
           <div class="form-group border-bottom border-secondary pb-4">
             <input type="checkbox" id="edit__taskMenu" class="checkbox mr-1">
