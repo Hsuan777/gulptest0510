@@ -8,29 +8,30 @@
     top: 0;
     bottom: 0;
     width: 296px;
-    
     &__user{
       position: absolute;
       bottom: 15px;
     }
-    .active{
+    .active {
       color: map-get($theme-colors, primary);
+      border-left: 4px solid map-get($theme-colors, primary);
+      .material-icons{
+        margin-left: -4px;
+      }
     }
-    
   }
-  
   &__link {
     display: flex;
     align-items: center;
     color: black;
     padding: 15px 0;
-    &:hover {
+    &:hover{
       color: map-get($theme-colors, primary);
-      
+      border-left: 4px solid map-get($theme-colors, primary);
+      .material-icons{
+        margin-left: -4px;
+      }
     }
   }
-  
-  
-  
 }
 
