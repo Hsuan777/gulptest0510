@@ -26,6 +26,13 @@
 .icon{
   width: 24px;
   height: 24px;
+  &__page{
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+.custom__page-link{
+  padding: 0.25rem 0.5rem;
 }
 
 .text__highlight {
