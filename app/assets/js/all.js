@@ -13,6 +13,19 @@ $(document).ready(() => {
       break;
   }
 
+  $(".js-button__reply").click(function () {
+    
+    $(".js-button__reply__hide").hide()
+    $(".js-reply__teacher").toggle();
+  });
+  $(".js-button__cancel").click(function () {
+    $(".js-button__reply__hide").show();
+    // $(".js-button__reply__list").show();
+    $(".js-reply__teacher").toggle();
+  });
+
+
+
   // 箭頭方向改變，提醒有折疊內容
   $(".js-more").click(function () {
     if($(this).text()!="expand_less"){

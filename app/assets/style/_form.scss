@@ -1,3 +1,15 @@
+
+.form{
+  &__reply{
+    position: relative;
+    &__inputGroup{
+      position: absolute;
+      right:24px;
+      bottom: 16px;
+    }
+  }
+}
+
 .checkbox {
   display: none;
   &__label {
@@ -24,3 +36,4 @@
     }
   }
 }
+
