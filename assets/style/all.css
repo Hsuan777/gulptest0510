@@ -7197,10 +7197,8 @@ td {
   background-repeat: no-repeat; }
 
 .navbar__menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 296px; }
+  position: relative;
+  min-height: 100vh; }
   .navbar__menu__user {
     position: absolute;
     bottom: 15px; }
