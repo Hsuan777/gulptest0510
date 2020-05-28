@@ -4,10 +4,9 @@
 
 .navbar {
   &__menu{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 296px;
+    position: relative;
+    min-height: 100vh;
+    // width: 296px;
     &__user{
       position: absolute;
       bottom: 15px;

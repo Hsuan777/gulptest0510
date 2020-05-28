@@ -8,6 +8,7 @@ engine: ejs
 current: assignment
 ---
 <main>
+  <!-- 下拉選單 -->
   <div class="d-flex justify-content-between align-items-center">
     <div class="dropdown">
       <button class="btn btn-link text-decoration-none h2 text-dark mb-0 pl-0 d-flex align-items-center" type="button"
@@ -22,6 +23,7 @@ current: assignment
     </div>
     <h6 class=" text-black-50">2 comments</h6>
   </div>
+  <!-- assignment 內容 -->
   <div class="container-fuild">
     <div class="row ">
       <div class="col-5 ">
@@ -129,7 +131,7 @@ current: assignment
                   </li>
                   <!-- 講師 -->
                   <li class="media js-reply__teacher">
-                    <div class="loginImg loginImg__admin rounded-circle mr-1 "></div>
+                    <div class="loginImg loginImg__admin rounded-circle mr-1"></div>
                     <div class="media-body">
                       <ul class="list-unstyled d-flex justify-content-between">
                         <li>
@@ -478,7 +480,7 @@ current: assignment
           </li>
           <!-- TODO:使用折疊，顯示方式從右下到左上 -->
           <li class="mt-2 js-button__reply__hide" >
-            <button type="button" class="btn btn-outline-primary   mr-2 px-4">Mark as read</button>
+            <button type="button" class="btn btn-outline-primary mr-2 px-4">Mark as read</button>
             <button type="button" class="btn btn-primary px-4 js-button__reply" data-toggle="collapse"
               data-target="#form__reply" aria-expanded="false" aria-controls="reply">Reply</button>
           </li>

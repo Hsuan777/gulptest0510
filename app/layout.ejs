@@ -28,33 +28,33 @@
 
   <div class="container-fuild">
     <div class="row no-gutters">
-      <div class="col-2">
-        <aside class="navbar__menu py-4  bg-third h-100 ">
-          <nav class="nav flex-column ">
-            
+      <!-- 左邊側欄 -->
+      <div class="col-2 bg-third">
+        <aside class="navbar__menu py-4 h-100">
+           <!-- 側欄列 -->
+          <nav class="nav flex-column">
             <h1 class="logo mb-4 ml-4">ANSWER</h1>
-            <a href="" class="navbar__link pl-4 text-decoration-none ">
+            <a href="" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2">assessment </span> Dashboard
             </a>
-            <a href="" class="navbar__link pl-4 text-decoration-none ">
+            <a href="" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2"> question_answer </span> Question
             </a>
-            <a href="index.html" class="navbar__link pl-4 text-decoration-none ">
+            <a href="index.html" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2"> assignment </span> Assignment
             </a>
             <a href="" class="navbar__link pl-4  text-decoration-none">
               <span class="material-icons mr-2"> video_library </span> Course
             </a>
-            <a href="admin.html" class="navbar__link pl-4 text-decoration-none ">
+            <a href="admin.html" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2 "> group </span>Admin
             </a>
-            
             <a href="" class="navbar__link pl-4 text-decoration-none">
               <span class="material-icons mr-2"> settings </span> Settings
             </a>
-            
           </nav>
-          <!-- TODO: 先用定位，但它父元素是 body，待修正 -->
+
+          <!-- 已登入使用者 -->
           <div class="navbar__menu__user media align-items-center ml-4">
             <div class=" loginImg loginImg__admin mr-2 rounded-circle"></div>
             <div class="media-body">
@@ -62,10 +62,12 @@
               <p class="mb-0 small">andy0401@mail.com</p>
             </div>
           </div>
-
         </aside>
       </div>
+
+      <!-- 右邊內容 -->
       <div class="col-10">
+        <!-- 上方導覽列 -->
         <nav class="p-4 mb-2">
           <ul class="nav list-unstyled justify-content-between align-items-center w-100">
             <li class="d-flex align-items-center">
@@ -74,16 +76,16 @@
 
             </li>
             <li>
-              <span class="material-icons mr-3"> search </span>
-              <span class="material-icons"> notifications_active </span>
+              <a href="" class="material-icons mr-3"> search </a>
+              <a href="" class="material-icons"> notifications_active </a>
             </li>
           </ul>
         </nav>
-        <main class="px-4 py-1">
+
+        <!-- 主要內容 -->
+        <main class="px-4 py-1 ">
           <%- contents %>
         </main>
-
-
       </div>
     </div>
   </div>
